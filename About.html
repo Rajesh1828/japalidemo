@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>japali</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+<!-- 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.js"></script>
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-beta2/js/bootstrap.min.js"></script>
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+    <link rel="shortcut icon" href="/imagesjp/Japali Logo.png" type="image/x-icon">
+
+    <style>
+        .announcement-bar {
+            background-color: #ffc107; 
+            color: #000;
+            white-space: nowrap;
+            overflow: hidden;
+            position: relative;
+            height: 70px;
+            display: flex;
+            align-items: center; 
+            justify-content: space-between; 
+            padding: 0 20px;
+        }
+
+        .scrolling-text {
+            display: inline-block;
+            position: absolute;
+            white-space: nowrap;
+            animation: scroll-left 20s linear infinite;
+        }
+
+        @keyframes scroll-left {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+
+
+/* navbar styles for the navbar */
+        .navbar-brand img {
+            height: 40px;
+        }
+        .offcanvas-start {
+            width: 250px;
+        }
+        .badge {
+            background-color: red;
+            position: absolute;
+            top: 0;
+            right: -5px;
+        }
+
+
+/*hero section*/
+        /* Banner Styling */
+        .image-container {
+            position: relative;
+            width: 100%;
+            max-width: 100%; /* Adjust max-width as needed */
+            margin: auto
+        }
+
+        /* Responsive Image */
+        .image-container img{
+            width:100%;
+            height: auto;
+            object-fit: cover;
+
+        }
+
+        /* Text Overlay */
+        .overlay-text {
+            position: absolute;
+            top: 50%;    
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: clamp(16px, 4vw, 36px); /* Responsive font size */
+            font-weight: bold;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        @media(max-width: 768px) {
+            .overlay-text {
+                font-size: clamp(12px, 3vw, 24px); /* Responsive font size */
+            }
+        }
+/* about us content */
+
+        .container-about {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            font-weight: 400;
+        }
+
+        .title {
+            color: #d32f2f;
+            font-weight: bold;
+            font-size: 28px; /* Reduced font size */
+        }
+
+        .subtitle {
+            color: #000000;
+            font-size: 18px; /* Reduced font size */
+        }
+        .content p {
+            font-size: 16px;}
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+        }
+        #taste{
+            border-radius: 5px;
+        }
+
+        .text-danger {
+            color: red;
+            font-size: 25px;
+            font-weight: bold;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .icon-container img {
+            width: 30px;
+            height: 30px;
+            object-fit: contain;
+        }
+   
+        #sample{
+            margin-top: 40px;
+            margin-bottom: 40px;
+            
+        }
+    </style>
+</head>
+<body style=" background-color: #fdf7ef">
+
+
+    
+
+<div class="announcement-bar">
+    <div class="container d-flex align-items-center position-relative">
+        <!-- Scrolling text -->
+        <div class="scrolling-text">
+            <strong>Free ₹50,000 Today Offer! Grab it now! Limited Time Only!</strong>
+          
+       
+        </div>
+        <!-- Button on the right -->
+        <a href="#" class="btn btn-danger btn-sm ms-auto">Shop Now</a>
+    </div>
+</div>
+
+<!-- Navbar  start -->
+
+<nav class="navbar navbar-expand-lg bg-light border-bottom sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="Index.html">
+            <img src="/imagesjp/Japali Logo.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About.html">About us</a>
+                    </li>
+                    <li class="nav-item dropdown d-flex align-items-center">
+                        <!-- Services Link -->
+                        <a class="nav-link me-2" href="Collection.html">Services</a>
+                        <!-- Dropdown Toggle -->
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+                        
+                        <!-- Dropdown Menu -->
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Pickles</a></li>
+                            <li><a class="dropdown-item" href="#">Catering</a></li>
+                            <li><a class="dropdown-item" href="#"><strong>Co-LunchBox</strong></a></li>
+                            <li><a class="dropdown-item" href="#">Masalas</a></li>
+                            <li><a class="dropdown-item" href="#">Snacks</a></li>
+                            <li><a class="dropdown-item" href="#">Chutney Powders</a></li>
+                            <li><a class="dropdown-item" href="#">Culinary Pastes</a></li>
+                            <li><a class="dropdown-item" href="#">Spice Powders</a></li>
+                        </ul>
+                    </li>
+                    
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Current offers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Search Icon with OnClick -->
+        <a href="#" class="text-dark me-3" onclick="triggerSearch()">
+            <i class="bi bi-search"></i>
+        </a>
+
+        <!-- Profile Icon -->
+        <a href="#" class="text-dark me-3" onclick="viewProfile()">
+            <i class="bi bi-person"></i>
+        </a>
+
+        <!-- Bag Icon -->
+        <a href="cart.html" class="text-dark position-relative" onclick="viewCart()">
+            <i class="bi bi-bag"></i>
+            <span class="badge bg-danger text-white position-absolute top-0 start-100 translate-middle" id="cart-badge" style="display: none;">0</span>
+        </a>
+    
+    </div>
+</nav>
+
+
+<!-- Navbar end -->
+<!-- About us banner start  -->
+
+<div class="image-container">
+    <img src="/imagesjp/About.jpg" alt="Sample Image">
+    <div class="overlay-text">/About Us</div>
+</div>
+
+<div class="container my-5">
+    <h1 class="title text-center">Swagatham</h1>
+    <h2 class="subtitle text-center mb-4">We are Japali Home Foods – A Taste of Tradition, A World of Flavour!</h2>
+    
+    <div class="content">
+        <p class="lead">What began as a humble venture in 1979 under the name <b>Vamana Pickles</b> by Tejas Food Industries LLP, has today blossomed into an iconic brand, Swetha Telugu Foods. Rooted in the rich culinary traditions of South India, we have made it our mission to bring you the authentic, bold, and vibrant flavors that have made South Indian cuisine a global sensation.</p>
+        
+        <p>Our journey, now spanning over four decades, has been guided by the true spirit of Indian home-cooked meals. From our signature pickles to masalas, snacks, powders, and pastes, every product we create is the best in taste.</p>
+
+        <h3 class="mt-4 text-danger">Our Philosophy</h3>
+        <p>At japali Home Foods , we believe in <b>authenticity above all else.</b> Our products are made with 100% natural ingredients and are preservative-free, ensuring that each bite is as pure and flavorful as it is healthy. We operate from a state-of-the-art, US FDA-approved facility near Hyderabad, adhering to stringent FSSAI and ISO 22000:2005 certifications, and following WHO-recommended safety protocols to guarantee the highest standards of hygiene and quality.</p>
+
+        <h3 class="mt-4 text-danger">Global Reach</h3>
+        <p>Today, japali Home Foods  is a trusted name, not just in India, but across the world. With a presence in <b>28+ countries</b> including Canada, the USA, Australia, New Zealand, Singapore, UAE, Kuwait, and Hong Kong, we have made it our mission to bring the authentic taste of home to Indians everywhere. In India, we proudly serve the Southern states, preserving the regional flavors that define the heart of South Indian cuisine.</p>
+
+        <h3 class="mt-4 text-danger">Our Promise</h3>
+        <p>With over two decades of experience, our passionate team continually strives to create premium, handcrafted products that bring the best of traditional South Indian cooking to your table. Every product is rigorously tested for quality and taste, ensuring that only the finest reaches you.</p>
+
+        <h3 class="mt-4 text-danger">Taste the Authentic Difference</h3>
+        <p>When you choose <b>japali home Foods</b>, you’re choosing more than just food – you're choosing a slice of history, culture, and the genuine flavors of India. We are proud to be your partner in bringing the authentic home tastes of South India into kitchens around the world.</p>
+    </div>
+</div>
+
+
+<div class="container mt-3">
+    <h2>Japali HomeFood</h2>
+    <p>"japali Home Foods is a renowned brand rooted in the rich culinary traditions of South India. We specialize in authentic, bold, and vibrant flavors that have made South Indian cuisine a global sensation. Our products range from signature pickles to masalas, snacks, powders, and pastes, all made with 100% natural ingredients and without preservatives, ensuring the highest quality and flavor."</p> 
+    <img src="/imagesjp/Aboutlast.jpg" class="mx-auto d-block" style="width:50%" id="taste"> 
+  </div>
+
+
+  <div class="image-container" style="margin-top: 20px;">
+    <img src="/imagesjp/aboutbnn.jpg" alt="Sample Image">
+    <div class="overlay-text" style="font-size: 40px; color:whitesmoke;"  > 
+        "Experience the authentic flavors of home-cooked goodness with Japali Home Foods."
+    </div>
+    <!-- "Experience the authentic flavors of home-cooked goodness with Japali Home Foods." -->
+</div>
+
+
+
+<div class="container text-center" id="sample">
+    <p class="text-danger fw-bold">We are available at</p>
+    <div class="row justify-content-center">
+        <div class="col-2 col-md-1">
+            <img src="/imagesjp/foodlogos/Blinkit-yellow-app-icon.svg.png" alt="Blinkit" class="img-fluid">
+        </div>
+        <div class="col-2 col-md-1">
+            <img src="/imagesjp/foodlogos/zomato-logo-svg-vector_logoshape.png" alt="Zomato" class="img-fluid">
+        </div>
+        <div class="col-2 col-md-1">
+            <img src="/imagesjp/foodlogos/zepto-logo-vector_logoshape.png" alt="Zepto" class="img-fluid">
+        </div>
+        <div class="col-2 col-md-1">
+            <img src="/imagesjp/foodlogos/Reliance_Jio_Logo_(October_2015).svg.png" alt="Reliance Fresh" class="img-fluid">
+        </div>
+       
+        <div class="col-2 col-md-1">
+            <img src="/imagesjp/foodlogos/amazon.png" alt="Amazon" class="img-fluid">
+        </div>
+        <div class="col-2 col-md-1">
+            <img src="/imagesjp/foodlogos/Blinkit-yellow-app-icon.svg.png" alt="Blinkit" class="img-fluid">
+        </div>
+        <div class="col-2 col-md-1">
+            <img src="/imagesjp/foodlogos/Reliance_Jio_Logo_(October_2015).svg.png" alt="Jio" class="img-fluid">
+        </div>
+        <div class="col-2 col-md-1">
+            <img src="/imagesjp/foodlogos/swiggy2.jpg" alt="Swiggy" class="img-fluid">
+        </div>
+    </div>
+</div>
+
+
+    <!-- Footer Section -->
+    <footer style="border: 2px solid rgb(240, 122, 122)";>
+        <div class="container">
+          <div class="row">
+            <!-- Logo -->
+            <div class="col-md-3 logo">
+              <img src="/imagesjp/Japali Logo.png" alt="Logo">
+            </div>
+    
+            <!-- Quick Links -->
+            <div class="col-md-3 quick-links">
+                <h5>Quick Links</h5>
+                <a href="Index.html">Home</a>
+                <a href="Collection.html">Services</a>
+                <a href="contact.html">Contact</a>
+                <a href="Collection.html">Collection</a>
+              </div>
+      
+    
+            <!-- About Us -->
+            <div class="col-md-3">
+              <h5>About Us</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+    
+            <!-- Contact Us -->
+            <div class="col-md-3">
+              <h5>Contact Us</h5>
+              <p>Email: contact@domain.com</p>
+              <p>Phone: +123 456 7890</p>
+            </div>
+          </div>
+    
+          <div class="row">
+            <!-- Follow Us -->
+            <div class="col-md-12 text-center">
+              <h5>Follow Us</h5>
+              <div class="social-icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+  <div style="background-color: #ffc107; justify-content: center;  justify-content:center ; text-align: center; " class="text">
+            <strong> © All Rights Reserved 2025 Japali Home Foods</strong>
+        
+        </div>
+        
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"></script>
+
+<script src="/Public/script.js"></script>
+</body>
+</html>
