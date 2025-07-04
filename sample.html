@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Cards</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Container */
+        .cards-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+            max-width: 90%;
+            margin: 50px auto;
+        }
+
+        /* Card */
+        .card {
+            width: calc(33.33% - 20px); /* 3 cards per row on desktop */
+            
+            /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); */
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        /* Card Image */
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        /* Card Button */
+        .card a {
+    display: block;
+    width: 50%;
+    border-radius: 30px;
+    padding: 12px;
+    background-color: #db1e1e;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    margin: 20px auto; /* Centers the button */
+    text-align: center;
+}
+
+
+        .card a:hover {
+            background-color: #e7715c;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .card {
+                width: calc(50% - 20px); /* 2 cards per row */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                width: 100%; /* 1 card per row */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Cards Section -->
+<div class="cards-container">
+    <div class="card">
+        <img src="/imagesjp/collections/lunchbox.jpg" alt="Lunch-Box">
+        <a href="#">Lunch-Box</a>
+    </div>
+    <div class="card">
+        <img src="/imagesjp/collections/pickels.jpg" alt="Pickels">
+        <a href="#">Pickels</a>
+    </div>
+    <div class="card">
+        <img src="/imagesjp/collections/snacks.jpg" alt="Snacks">
+        <a href="#">Snacks</a>
+    </div>
+    <div class="card">
+        <img src="/imagesjp/collections/chutneypowders.jpg" alt="Chutney Powders">
+        <a href="#">Chutney Powders</a>
+    </div>
+    <div class="card">
+        <img src="/imagesjp/collections/spices.png" alt="Spices Powders">
+        <a href="#">Spices Powders</a>
+    </div>
+    <div class="card">
+        <img src="/imagesjp/collections/masalas.jpg" alt="Masalas">
+        <a href="#">Masalas</a>
+    </div>
+</div>
+
+</body>
+</html>
