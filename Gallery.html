@@ -28,7 +28,7 @@
 
     <style>
         .announcement-bar {
-            background-color: #ffc107; 
+            background-color:#e34426;
             color: #000;
             white-space: nowrap;
             overflow: hidden;
@@ -94,13 +94,14 @@
         .overlay-text {
             position: absolute;
             top: 50%;    
-            left: 50%;
+            left: 20%;
             transform: translate(-50%, -50%);
             color: white;
-            font-size: clamp(16px, 4vw, 36px); /* Responsive font size */
-            font-weight: bold;
+            font-size: clamp(18px, 4vw, 36px); /* Responsive font size */
+            font-weight:50px;
             font-family: 'Poppins', sans-serif;
         }
+
 
         @media(max-width: 768px) {
             .overlay-text {
@@ -145,6 +146,9 @@
             filter: invert(1);
         }
  
+        #offcanvasNavbar{
+            font-weight: bold;
+        }
     </style>
 </head>
 <body style=" background-color: #fdf7ef;">
@@ -170,7 +174,7 @@
 <nav class="navbar navbar-expand-lg bg-light border-bottom sticky-top">
     <div class="container">
         <a class="navbar-brand" href="Index.html">
-            <img src="/imagesjp/Japali Logo.png" alt="Logo">
+            <img src="imagesjp/Japali Logo.png" alt="Logo">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
             <span class="navbar-toggler-icon"></span>
@@ -180,7 +184,7 @@
                 <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-            <div class="offcanvas-body">
+            <div class="offcanvas-body" id="offcanvasNavbar">
                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                     <li class="nav-item">
                         <a class="nav-link active" href="Index.html">Home</a>
@@ -196,20 +200,20 @@
                         
                         <!-- Dropdown Menu -->
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Pickles</a></li>
+                            <li><a class="dropdown-item" href="pickels.html">Pickles</a></li>
                             <li><a class="dropdown-item" href="#">Catering</a></li>
-                            <li><a class="dropdown-item" href="#"><strong>Co-LunchBox</strong></a></li>
-                            <li><a class="dropdown-item" href="#">Masalas</a></li>
-                            <li><a class="dropdown-item" href="#">Snacks</a></li>
+                            <li><a class="dropdown-item" href="co-lunch box.html"><strong>Co-LunchBox</strong></a></li>
+                            <li><a class="dropdown-item" href="masala.html">Masalas</a></li>
+                            <li><a class="dropdown-item" href="snacks.html">Snacks</a></li>
                             <li><a class="dropdown-item" href="#">Chutney Powders</a></li>
-                            <li><a class="dropdown-item" href="#">Culinary Pastes</a></li>
-                            <li><a class="dropdown-item" href="#">Spice Powders</a></li>
+                            <li><a class="dropdown-item" href="">Culinary Pastes</a></li>
+                            <li><a class="dropdown-item" href="spicypowders.html">Spice Powders</a></li>
                         </ul>
                     </li>
                     
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="#">Current offers</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link" href="Gallery.html">Gallery</a>
                     </li>
@@ -244,8 +248,8 @@
 <!--gallaey banner section-->
 
 <div class="image-container">
-    <img src="/imagesjp/gallery.jpg" alt="Sample Image">
-    <div class="overlay-text">Video/Gallery</div>
+    <img src="imagesjp/About-Us.jpg" alt="Sample Image">
+    <div class="overlay-text" >Video/Gallery</div>
 </div>
 
 <!--gallery banner section end-->
@@ -261,40 +265,40 @@
    
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="/imagesjp/galleryimages/american-style-brunch-tomato-omelette-600nw-2424020343-5.webp" alt="Image 1">
+                <img src="imagesjp/galleryimages/american-style-brunch-tomato-omelette-600nw-2424020343-5.webp" alt="Image 1">
             </div>
             <div class="carousel-item">
-                <img src="/imagesjp/galleryimages/Andhra-snacks-1366x768-8.webp" alt="Image 2">
+                <img src="imagesjp/galleryimages/Andhra-snacks-1366x768-8.webp" alt="Image 2">
             </div>
             <div class="carousel-item">
-                <img src="/imagesjp/galleryimages/cafeteria-staff-member-preparing-nutritious-meals-fresh-vegetables-healthy-eating-330447857-7.webp" alt="Image 3">
+                <img src="imagesjp/galleryimages/chekodi_2-10.webp" alt="Image 3">
             </div>
             <div class="carousel-item">
-                <img src="/imagesjp/galleryimages/chekodi_2-10.webp" alt="Image 4">
+                <img src="imagesjp/galleryimages/chekodi_2-10.webp" alt="Image 4">
             </div>
             <div class="carousel-item">
-                <img src="/imagesjp/galleryimages/Good_Food_Display_-_NCI_Visuals_Online1.jpg" alt="Image 5">
+                <img src="imagesjp/galleryimages/istockphoto-473582820-612x612-3.jpg" alt="Image 5">
             </div>
             <div class="carousel-item">
-                <img src="/imagesjp/galleryimages/istockphoto-473582820-612x612-3.jpg" alt="Image 6">
+                <img src="imagesjp/galleryimages/istockphoto-868408746-612x612-2.jpg" alt="Image 6">
             </div>
             <div class="carousel-item">
-                <img src="/imagesjp/galleryimages/istockphoto-868408746-612x612-2.jpg" alt="Image 7">
+                <img src="imagesjp/galleryimages/karaboondi-12.webp" alt="Image 7">
             </div>
             <div class="carousel-item">
-                <img src="/imagesjp/galleryimages/karaboondi-12.webp" alt="Image 8">
+                <img src="imagesjp/galleryimages/LEDE_Oma's Hideaway, Credit Christine Dong-6.webp" alt="Image 8">
             </div>
             <div class="carousel-item">
-                <img src="/imagesjp/galleryimages/LEDE_Oma's Hideaway, Credit Christine Dong-6.webp" alt="Image 9">
+                <img src="imagesjp/galleryimages/Ravioli_Lasagna_010-c251db1faa1d4e0d8e2708396dc41525-4.jpg" alt="Image 9">
             </div>
             <div class="carousel-item">
-                <img src="/imagesjp/galleryimages/Ravioli_Lasagna_010-c251db1faa1d4e0d8e2708396dc41525-4.jpg" alt="Image 10">
+                <img src="imagesjp/galleryimages/Ravioli_Lasagna_010-c251db1faa1d4e0d8e2708396dc41525-4.jpg" alt="Image 10">
             </div>
             <div class="carousel-item">
-                <img src="/imagesjp/galleryimages/Ricotta-Polpette-FT-RECIPE0723-420aee27e58a410080366740cd1aa08c-5.jpg" alt="Image 11">
+                <img src="imagesjp/galleryimages/tellyourmamasquidward.mp3" alt="Image 11">
             </div>
             <div class="carousel-item">
-                <img src="/imagesjp/galleryimages/savories-combo11.jpg" alt="Image 12">
+                <img src="imagesjp/galleryimages/tellyourmamasquidward.mp3" alt="Image 12">
             </div>
         </div>
               <!-- Controls -->
@@ -425,7 +429,7 @@
               <div class="row">
                 <!-- Logo -->
                 <div class="col-md-3 logo">
-                  <img src="/imagesjp/Japali Logo.png" alt="Logo">
+                  <img src="/public/imagesjp/Japali Logo.png " alt="Logo">
                 </div>
         
                 <!-- Quick Links -->
@@ -439,15 +443,17 @@
           
                 <!-- About Us -->
                 <div class="col-md-3">
-                  <h5>About Us</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <h5>About Us</h5>
+                    <p>Japali Home Kitchen offers freshly prepared meals with natural ingredients, ensuring no preservatives are added. Enjoy homemade flavors with a commitment to health and purity.</p>
                 </div>
-        
+
                 <!-- Contact Us -->
                 <div class="col-md-3">
-                  <h5>Contact Us</h5>
-                  <p>Email: contact@domain.com</p>
-                  <p>Phone: +123 456 7890</p>
+                    <h5>Contact Us</h5>
+                    <p>Email: japalikitchens@gmail.com</p>
+                    <p>Phone:+91 81252 13399</p>
+                     <p> 4/2, beside Samsung Service Centre, Devapuram, Ashok Nagar, Guntur, Andhra Pradesh 522006</p>
+
                 </div>
               </div>
         
@@ -469,7 +475,7 @@
       <div style="background-color: #ffc107; justify-content: center;  justify-content:center ; text-align: center; " class="text">
                 <strong> © All Rights Reserved 2025 Japali Home Foods</strong>
             
-            </div>
+            </div>     
             
 
     

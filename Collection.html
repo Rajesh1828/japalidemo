@@ -25,7 +25,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
 
-    <link rel="shortcut icon" href="/imagesjp/Japali Logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="imagesjp/Japali Logo.png" type="image/x-icon">
 
     <style>
           * {
@@ -35,7 +35,7 @@
             font-family: Arial, sans-serif;
         }
         .announcement-bar {
-            background-color: #ffc107;
+            background-color:#e34426;
             color: #000;
             white-space: nowrap;
             overflow: hidden;
@@ -103,13 +103,12 @@
         /* Text Overlay */
         .overlay-text {
             position: absolute;
-            top: 50%;
-            left: 50%;
+            top: 50%;    
+            left: 20%;
             transform: translate(-50%, -50%);
             color: white;
-            font-size: clamp(16px, 4vw, 36px);
-            /* Responsive font size */
-            font-weight: bold;
+            font-size: clamp(18px, 4vw, 36px); /* Responsive font size */
+            font-weight:50px;
             font-family: 'Poppins', sans-serif;
         }
 
@@ -205,6 +204,9 @@
                 height: 180px;
         }
     }
+    #offcanvasNavbar{
+            font-weight: bold;
+        }
         
     </style>
 </head>
@@ -229,7 +231,7 @@
     <nav class="navbar navbar-expand-lg bg-light border-bottom sticky-top">
         <div class="container">
             <a class="navbar-brand" href="Index.html">
-                <img src="/Public/imagesjp/Japali Logo.png " alt="Logo">
+                <img src="imagesjp/Japali Logo.png" alt="Logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar">
@@ -241,7 +243,7 @@
                     <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-                <div class="offcanvas-body">
+                <div class="offcanvas-body" id="offcanvasNavbar">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
                             <a class="nav-link active" href="Index.html">Home</a>
@@ -257,14 +259,14 @@
                             
                             <!-- Dropdown Menu -->
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Pickles</a></li>
+                                <li><a class="dropdown-item" href="pickels.html">Pickles</a></li>
                                 <li><a class="dropdown-item" href="#">Catering</a></li>
-                                <li><a class="dropdown-item" href="#"><strong>Co-LunchBox</strong></a></li>
-                                <li><a class="dropdown-item" href="#">Masalas</a></li>
-                                <li><a class="dropdown-item" href="#">Snacks</a></li>
+                                <li><a class="dropdown-item" href="co-lunch box.html"><strong>Co-LunchBox</strong></a></li>
+                                <li><a class="dropdown-item" href="masala.html">Masalas</a></li>
+                                <li><a class="dropdown-item" href="snacks.html">Snacks</a></li>
                                 <li><a class="dropdown-item" href="#">Chutney Powders</a></li>
                                 <li><a class="dropdown-item" href="#">Culinary Pastes</a></li>
-                                <li><a class="dropdown-item" href="#">Spice Powders</a></li>
+                                <li><a class="dropdown-item" href="spicypowders.html">Spice Powders</a></li>
                             </ul>
                         </li>
                         
@@ -292,19 +294,25 @@
             </a>
 
             <!-- Bag Icon -->
-            <a href="cart.html" class="text-dark position-relative" onclick="viewCart()">
-                <i class="bi bi-bag"></i>
-                <span class="badge bg-danger text-white position-absolute top-0 start-100 translate-middle"
-                    id="cart-badge" style="display: none;">0</span>
-            </a>
-
+         
+        <div class="ml-auto">
+            <button class="btn btn-light position-relative" onclick="openSidebar('cart')">
+                🛒
+                <span id="cartCount" class="badge">0</span>
+            </button>
+            <button class="btn btn-light position-relative" onclick="openSidebar('wishlist')">
+                ❤️
+                <span id="wishlistCount" class="badge">0</span>
+            </button>
+        </div>
+        
         </div>
     </nav>
     <!-- Navbar end -->
     <!-- About us banner start  -->
 
     <div class="image-container">
-        <img src="/Public/imagesjp/bts2.jpg" alt="Sample Image">
+        <img src="imagesjp/About-Us.jpg" alt="Sample Image">
         <div class="overlay-text">/Collections</div>
     </div>
 
@@ -314,28 +322,28 @@
 <!-- Cards Section -->
 <div class="cards-container-1">
     <div class="card-1">
-        <img src="/Public/imagesjp/collections/lunchbox.jpg" alt="Lunch-Box">
-        <a href="#">Lunch-Box</a>
+        <img src="imagesjp/Lunch-box-2.jpg" alt="Lunch-Box">
+        <a href="co-lunch box.html">Lunch-Box</a>
     </div>
     <div class="card-1">
-        <img src="/Public/imagesjp/collections/pickels.jpg" alt="Pickels">
-        <a href="#">Pickels</a>
+        <img src="imagesjp/Pickles.jpg" alt="Pickels">
+        <a href="pickels.html">Pickels</a>
     </div>
     <div class="card-1">
-        <img src="/Public/imagesjp/collections/snacks.jpg" alt="Snacks">
-        <a href="#">Snacks</a>
+        <img src="imagesjp/Snacks.jpg" alt="Snacks">
+        <a href="snacks.html">Snacks</a>
     </div>
     <div class="card-1">
-        <img src="/Public/imagesjp/collections/chutneypowders.jpg" alt="Chutney Powders">
+        <img src="imagesjp/Chutney.jpg" alt="Chutney Powders">
         <a href="#">Chutney Powders</a>
     </div>
     <div class="card-1">
-        <img src="/Public/imagesjp/collections/spices.png" alt="Spices Powders">
-        <a href="#">Spices Powders</a>
+        <img src="imagesjp/Spicy-powders.jpg" alt="Spices Powders">
+        <a href="">Spices Powders</a>
     </div>
     <div class="card-1">
-        <img src="/Public/imagesjp/collections/masalas.jpg" alt="Masalas">
-        <a href="#">Masalas</a>
+        <img src="imagesjp/Spices.jpg" alt="Masalas">
+        <a href="masala.html">Masalas</a>
     </div>
 </div>
 
@@ -366,15 +374,16 @@
                 <!-- About Us -->
                 <div class="col-md-3">
                     <h5>About Us</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua.</p>
+                    <p>Japali Home Kitchen offers freshly prepared meals with natural ingredients, ensuring no preservatives are added. Enjoy homemade flavors with a commitment to health and purity.</p>
                 </div>
 
                 <!-- Contact Us -->
                 <div class="col-md-3">
                     <h5>Contact Us</h5>
-                    <p>Email: contact@domain.com</p>
-                    <p>Phone: +123 456 7890</p>
+                    <p>Email: japalikitchens@gmail.com</p>
+                    <p>Phone:+91 81252 13399</p>
+                     <p> 4/2, beside Samsung Service Centre, Devapuram, Ashok Nagar, Guntur, Andhra Pradesh 522006</p>
+
                 </div>
             </div>
 

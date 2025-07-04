@@ -28,7 +28,7 @@
 
     <style>
         .announcement-bar {
-            background-color: #ffc107; 
+            background-color:#e34426;
             color: #000;
             white-space: nowrap;
             overflow: hidden;
@@ -93,11 +93,11 @@
         .overlay-text {
             position: absolute;
             top: 50%;    
-            left: 50%;
+            left: 20%;
             transform: translate(-50%, -50%);
             color: white;
-            font-size: clamp(16px, 4vw, 36px); /* Responsive font size */
-            font-weight: bold;
+            font-size: clamp(18px, 4vw, 36px); /* Responsive font size */
+            font-weight:50px;
             font-family: 'Poppins', sans-serif;
         }
 
@@ -157,6 +157,9 @@
             margin-bottom: 40px;
             
         }
+        #offcanvasNavbar{
+            font-weight: bold;
+        }
     </style>
 </head>
 <body style=" background-color: #fdf7ef">
@@ -182,7 +185,7 @@
 <nav class="navbar navbar-expand-lg bg-light border-bottom sticky-top">
     <div class="container">
         <a class="navbar-brand" href="Index.html">
-            <img src="/imagesjp/Japali Logo.png" alt="Logo">
+            <img src="imagesjp/Japali Logo.png" alt="Logo">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
             <span class="navbar-toggler-icon"></span>
@@ -192,7 +195,7 @@
                 <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-            <div class="offcanvas-body">
+            <div class="offcanvas-body" id="offcanvasNavbar">
                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                     <li class="nav-item">
                         <a class="nav-link active" href="Index.html">Home</a>
@@ -208,21 +211,21 @@
                         
                         <!-- Dropdown Menu -->
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Pickles</a></li>
+                            <li><a class="dropdown-item" href="pickels.html">Pickles</a></li>
                             <li><a class="dropdown-item" href="#">Catering</a></li>
-                            <li><a class="dropdown-item" href="#"><strong>Co-LunchBox</strong></a></li>
-                            <li><a class="dropdown-item" href="#">Masalas</a></li>
-                            <li><a class="dropdown-item" href="#">Snacks</a></li>
+                            <li><a class="dropdown-item" href="co-lunch box.html"><strong>Co-LunchBox</strong></a></li>
+                            <li><a class="dropdown-item" href="masala.html">Masalas</a></li>
+                            <li><a class="dropdown-item" href="snacks.html">Snacks</a></li>
                             <li><a class="dropdown-item" href="#">Chutney Powders</a></li>
                             <li><a class="dropdown-item" href="#">Culinary Pastes</a></li>
-                            <li><a class="dropdown-item" href="#">Spice Powders</a></li>
+                            <li><a class="dropdown-item" href="spicypowders.html">Spice Powders</a></li>
                         </ul>
                     </li>
                     
 
-                    <li class="nav-item">
+                 <!--    <li class="nav-item">
                         <a class="nav-link" href="#">Current offers</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link" href="Gallery.html">Gallery</a>
                     </li>
@@ -234,14 +237,14 @@
         </div>
         
         <!-- Search Icon with OnClick -->
-        <a href="#" class="text-dark me-3" onclick="triggerSearch()">
+        <!-- <a href="#" class="text-dark me-3" onclick="triggerSearch()">
             <i class="bi bi-search"></i>
-        </a>
+        </a> -->
 
         <!-- Profile Icon -->
-        <a href="#" class="text-dark me-3" onclick="viewProfile()">
+        <!-- <a href="#" class="text-dark me-3" onclick="viewProfile()">
             <i class="bi bi-person"></i>
-        </a>
+        </a> -->
 
         <!-- Bag Icon -->
         <a href="cart.html" class="text-dark position-relative" onclick="viewCart()">
@@ -257,7 +260,7 @@
 <!-- About us banner start  -->
 
 <div class="image-container">
-    <img src="/imagesjp/About.jpg" alt="Sample Image">
+    <img src="imagesjp/About-Us.jpg" alt="Sample Image">
     <div class="overlay-text">/About Us</div>
 </div>
 
@@ -288,14 +291,14 @@
 <div class="container mt-3">
     <h2>Japali HomeFood</h2>
     <p>"japali Home Foods is a renowned brand rooted in the rich culinary traditions of South India. We specialize in authentic, bold, and vibrant flavors that have made South Indian cuisine a global sensation. Our products range from signature pickles to masalas, snacks, powders, and pastes, all made with 100% natural ingredients and without preservatives, ensuring the highest quality and flavor."</p> 
-    <img src="/imagesjp/Aboutlast.jpg" class="mx-auto d-block" style="width:50%" id="taste"> 
+    <img src="imagesjp/Aboutlast.jpg" class="mx-auto d-block" style="width:50%" id="taste"> 
   </div>
 
 
   <div class="image-container" style="margin-top: 20px;">
-    <img src="/imagesjp/aboutbnn.jpg" alt="Sample Image">
-    <div class="overlay-text" style="font-size: 40px; color:whitesmoke;"  > 
-        "Experience the authentic flavors of home-cooked goodness with Japali Home Foods."
+    <img src="imagesjp/Aboutdown.jpg" alt="Sample Image">
+    <div class="overlay-text" style="font-size: 25px; color:rgb(0, 0, 0); font-style: italic;"  > 
+        "Experience the authentic flavors of goodness with Japali Home Foods."
     </div>
     <!-- "Experience the authentic flavors of home-cooked goodness with Japali Home Foods." -->
 </div>
@@ -306,29 +309,29 @@
     <p class="text-danger fw-bold">We are available at</p>
     <div class="row justify-content-center">
         <div class="col-2 col-md-1">
-            <img src="/imagesjp/foodlogos/Blinkit-yellow-app-icon.svg.png" alt="Blinkit" class="img-fluid">
+            <img src="imagesjp/foodlogos/Blinkit-yellow-app-icon.svg.png" alt="Blinkit" class="img-fluid">
         </div>
         <div class="col-2 col-md-1">
-            <img src="/imagesjp/foodlogos/zomato-logo-svg-vector_logoshape.png" alt="Zomato" class="img-fluid">
+            <img src="/public/imagesjp/foodlogos/zomato-logo-svg-vector_logoshape.png" alt="Zomato" class="img-fluid">
         </div>
         <div class="col-2 col-md-1">
-            <img src="/imagesjp/foodlogos/zepto-logo-vector_logoshape.png" alt="Zepto" class="img-fluid">
+            <img src="/public/imagesjp/foodlogos/zepto-logo-vector_logoshape.png" alt="Zepto" class="img-fluid">
         </div>
         <div class="col-2 col-md-1">
-            <img src="/imagesjp/foodlogos/Reliance_Jio_Logo_(October_2015).svg.png" alt="Reliance Fresh" class="img-fluid">
+            <img src="/public/imagesjp/foodlogos/Reliance_Jio_Logo_(October_2015).svg.png" alt="Reliance Fresh" class="img-fluid">
         </div>
        
         <div class="col-2 col-md-1">
-            <img src="/imagesjp/foodlogos/amazon.png" alt="Amazon" class="img-fluid">
+            <img src="/public/imagesjp/foodlogos/amazon.png" alt="Amazon" class="img-fluid">
         </div>
         <div class="col-2 col-md-1">
-            <img src="/imagesjp/foodlogos/Blinkit-yellow-app-icon.svg.png" alt="Blinkit" class="img-fluid">
+            <img src="/public/imagesjp/foodlogos/Blinkit-yellow-app-icon.svg.png" alt="Blinkit" class="img-fluid">
         </div>
         <div class="col-2 col-md-1">
-            <img src="/imagesjp/foodlogos/Reliance_Jio_Logo_(October_2015).svg.png" alt="Jio" class="img-fluid">
+            <img src="/public/imagesjp/foodlogos/Reliance_Jio_Logo_(October_2015).svg.png" alt="Jio" class="img-fluid">
         </div>
         <div class="col-2 col-md-1">
-            <img src="/imagesjp/foodlogos/swiggy2.jpg" alt="Swiggy" class="img-fluid">
+            <img src="/public/imagesjp/foodlogos/swiggy2.jpg" alt="Swiggy" class="img-fluid">
         </div>
     </div>
 </div>
@@ -340,7 +343,7 @@
           <div class="row">
             <!-- Logo -->
             <div class="col-md-3 logo">
-              <img src="/imagesjp/Japali Logo.png" alt="Logo">
+              <img src="/public/imagesjp/Japali Logo.png" alt="Logo">
             </div>
     
             <!-- Quick Links -->
@@ -353,18 +356,20 @@
               </div>
       
     
-            <!-- About Us -->
-            <div class="col-md-3">
-              <h5>About Us</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-    
-            <!-- Contact Us -->
-            <div class="col-md-3">
-              <h5>Contact Us</h5>
-              <p>Email: contact@domain.com</p>
-              <p>Phone: +123 456 7890</p>
-            </div>
+           <!-- About Us -->
+           <div class="col-md-3">
+            <h5>About Us</h5>
+            <p>Japali Home Kitchen offers freshly prepared meals with natural ingredients, ensuring no preservatives are added. Enjoy homemade flavors with a commitment to health and purity.</p>
+        </div>
+
+        <!-- Contact Us -->
+        <div class="col-md-3">
+            <h5>Contact Us</h5>
+            <p>Email: japalikitchens@gmail.com</p>
+            <p>Phone:+91 81252 13399</p>
+             <p> 4/2, beside Samsung Service Centre, Devapuram, Ashok Nagar, Guntur, Andhra Pradesh 522006</p>
+
+        </div>
           </div>
     
           <div class="row">
