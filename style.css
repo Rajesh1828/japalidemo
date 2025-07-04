@@ -9,34 +9,6 @@ body
     background-color: #eee;
 }
 
-/* Preloader Background */
-#preloader {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 9999;
-}
-
-/* Preloader Animation (Spinner) */
-.loader {
-  border: 5px solid #f3f3f3;
-  border-top: 5px solid #ff6a00; /* Change color as needed */
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  animation: spin 1s linear infinite;
-}
-
-/* Spinner Animation */
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
 
 
 
@@ -60,8 +32,8 @@ body
     object-fit: cover;
 }
 .offer-section {
-    background-color: #dc3545;
-    color: #fff;
+    background-color: #e34426;
+    /* color: #000000; */
     text-align: center;
     padding: 20px;
     border-radius: 15px;
@@ -69,13 +41,27 @@ body
 .offer-section h1, .offer-section h2 {
     margin: 0;
 }
+.offer-section h2{
+  font-size: 2.5rem;
+
+}
+#taste h2{
+  color: #000000;
+  
+}
+.flex-grow-1 h2{
+  font-size: 2.5rem;
+  color: #e34426;
+  font-weight: bold;
+}
 .tradition-section {
-    background-color: #7d766c;
-    color: white;
-    padding: 20px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 0px;
     border-radius: 15px;
     display: flex;
     align-items: center;
+    font-weight: bold;
 }
 .tradition-section img {
     max-width: 100%;
@@ -164,13 +150,13 @@ body
     font-size: 0.9rem;
     text-transform: uppercase;
     font-weight: bold;
-    color: #ff8000;
+    color: #e34426;
 }
 
 #myBtnContainer .btn:hover,
 #myBtnContainer .btn.active {
-    color: #ff9100;
-    border-bottom: 2px solid #ff8000;
+    color: #e34426;
+    border-bottom: 2px solid  #e34426;
 }
 
 /* Navbar Buttons Styling */
@@ -179,18 +165,18 @@ body
     font-weight: 0.5rem;
     border: none;
     background-color: transparent;
-    color: #ff7b00;
+    color:  #e34426;;
     transition: color 0.3s, text-decoration 0.3s;
 }
 
 .navbar-brand:hover,
 .navbar .btn:hover {
     text-decoration: underline;
-    color: #b35100;
+    color:  #e34426;
 }
 
 .custom-btn {
-    background-color: #f58c0c; /* Red color similar to the image */
+    background-color: #e34426;; /* Red color similar to the image */
     color: white;
     border: none;
     border-radius: 1.0rem; /* Rounded corners */
@@ -453,3 +439,72 @@ body
 
 
 
+/* Sidebar Styling */
+/* Sidebar Styles */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -400px; /* Hidden by default */
+  width: 400px;
+  height: 100vh;
+  background: white;
+  box-shadow: -5px 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  transition: right 0.3s ease-in-out;
+  z-index: 1050;
+  overflow-y: auto;
+}
+
+/* Show Sidebar */
+.sidebar.active {
+  right: 0; /* Slide in */
+}
+
+/* Ensure Sidebar Doesn't Overlap Navbar */
+.navbar {
+  z-index: 1100; /* Higher than sidebar */
+  position: relative;
+}
+
+/* Close Button */
+.sidebar .btn-danger {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+/* Prevent Background Scrolling When Sidebar is Open */
+body.no-scroll {
+  overflow: hidden;
+}
+
+
+
+#toastContainer {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 250px;
+  z-index: 9999;
+}
+
+.toast-item {
+  display: flex;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.toast-item img {
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateX(20px); }
+  to { opacity: 1; transform: translateX(0); }
+}

@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>japali/About</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.js"></script>
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-beta2/js/bootstrap.min.js"></script>
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+    <link rel="shortcut icon" href="/imagesjp/Japali Logo.png" type="image/x-icon">
+
+    <style>
+        .announcement-bar {
+            background-color:#e34426;
+            color: #000;
+            white-space: nowrap;
+            overflow: hidden;
+            position: relative;
+            height: 70px;
+            display: flex;
+            align-items: center; 
+            justify-content: space-between; 
+            padding: 0 20px;
+        }
+
+        .scrolling-text {
+            display: inline-block;
+            position: absolute;
+            white-space: nowrap;
+            animation: scroll-left 20s linear infinite;
+        }
+
+        @keyframes scroll-left {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+
+
+/* navbar styles for the navbar */
+        .navbar-brand img {
+            height: 40px;
+        }
+        .offcanvas-start {
+            width: 250px;
+        }
+        .badge {
+            background-color: red;
+            position: absolute;
+            top: 0;
+            right: -5px;
+        }
+
+
+
+    </style>
+</head>
+<body style=" background-color: #fdf7ef">
+
+
+    
+
+<div class="announcement-bar">
+    <div class="container d-flex align-items-center position-relative">
+        <!-- Scrolling text -->
+        <div class="scrolling-text">
+            <strong>Free ₹50,000 Today Offer! Grab it now! Limited Time Only!</strong>
+          
+       
+        </div>
+        <!-- Button on the right -->
+        <a href="#" class="btn btn-danger btn-sm ms-auto">Shop Now</a>
+    </div>
+</div>
+
+<!-- Navbar  start -->
+
+<nav class="navbar navbar-expand-lg bg-light border-bottom sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="Index.html">
+            <img src="/public/imagesjp/Japali Logo.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body" id="offcanvasNavbar">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About.html">About us</a>
+                    </li>
+                    <li class="nav-item dropdown d-flex align-items-center">
+                        <!-- Services Link -->
+                        <a class="nav-link me-2" href="Collection.html">Services</a>
+                        <!-- Dropdown Toggle -->
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+                        
+                        <!-- Dropdown Menu -->
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Pickles</a></li>
+                            <li><a class="dropdown-item" href="#">Catering</a></li>
+                            <li><a class="dropdown-item" href="#"><strong>Co-LunchBox</strong></a></li>
+                            <li><a class="dropdown-item" href="#">Masalas</a></li>
+                            <li><a class="dropdown-item" href="#">Snacks</a></li>
+                            <li><a class="dropdown-item" href="#">Chutney Powders</a></li>
+                            <li><a class="dropdown-item" href="#">Culinary Pastes</a></li>
+                            <li><a class="dropdown-item" href="#">Spice Powders</a></li>
+                        </ul>
+                    </li>
+                    
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Current offers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Search Icon with OnClick -->
+        <!-- <a href="#" class="text-dark me-3" onclick="triggerSearch()">
+            <i class="bi bi-search"></i>
+        </a> -->
+
+        <!-- Profile Icon -->
+        <!-- <a href="#" class="text-dark me-3" onclick="viewProfile()">
+            <i class="bi bi-person"></i>
+        </a> -->
+
+        <!-- Bag Icon -->
+        <div class="ml-auto">
+            <button class="btn btn-light position-relative" onclick="openSidebar('cart')">
+                🛒
+                <span id="cartCount" class="badge">0</span>
+            </button>
+            <button class="btn btn-light position-relative" onclick="openSidebar('wishlist')">
+                ❤️
+                <span id="wishlistCount" class="badge">0</span>
+            </button>
+        </div>
+    
+    </div>
+</nav>
+
+    <!-- Start of Carousel -->
+<!-- Bootstrap Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators/Dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+    </div>
+
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="3000">
+        <img src="/public/imagesjp/001 copybanner.jpg" alt="Los Angeles" class="d-block w-100">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="/public/imagesjp/cateering banners.jpg" alt="Chicago" class="d-block w-100">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="/public/imagesjp/Masala_banner.jpg" alt="New York" class="d-block w-100">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="/public/imagesjp/Pickles_Banners.jpg" alt="New York" class="d-block w-100">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="/public/imagesjp/Powders_banner.jpg" alt="New York" class="d-block w-100">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+
+</div>
+
+
+
+    <!--content section start-->
+
+    <!-- Features Section -->
+    <div class="container my-4">
+        <div class="row text-center">
+            <div class="col-md-3 feature-box">
+                <i class="bi bi-house-door"></i> <!-- Replace with a relevant Bootstrap icon -->
+                <h6 class="mt-2">Traditional</h6>
+            </div>
+            <div class="col-md-3 feature-box">
+                <i class="bi bi-shield-lock"></i> <!-- Replace with a relevant Bootstrap icon -->
+                <h6 class="mt-2">USFDA Compliant Facility</h6>
+            </div>
+            <div class="col-md-3 feature-box">
+                <i class="bi bi-truck"></i> <!-- Delivery Icon --></i> <!-- Replace with a relevant Bootstrap icon -->
+                <h6 class="mt-2">Exported to 25+ Countries</h6>
+            </div>
+
+            <div class="col-md-3 feature-box">
+                <i class="fa-solid fa-leaf"></i>
+                <h6 class="mt-2">No Preservatives Added</h6>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Promo Section -->
+    <div class="container promo-section">
+        <div class="row g-4">
+            <!-- Offer Card -->
+            <div class="col-md-6 d-flex" id="taste">
+                <div class="offer-section flex-grow-1" id="taste">
+                    <h2>Special Mega Offer</h2>
+                    <h1>31% OFF</h1>
+                    <button class="btn btn-light mt-3">Buy Now</button>
+                </div>
+            </div>
+
+            <!-- Product Image -->
+            <div class="col-md-6 d-flex">
+                <div class="promo-card flex-grow-1" id="taste">
+                    <img src="/public/imagesjp/heo_pickels.jpg" alt="Pickles" class="promo-img">
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <!-- Taste of Telugu Tradition -->
+            <div class="col-md-12">
+                <div class="tradition-section">
+                    <div class="flex-grow-1" >
+                        <h2>Taste of Telugu Tradition</h2>
+                    </div>
+                    <div id="taste" class="image-container">
+                        <img src="/public/imagesjp/9.jpg" alt="Snacks" class="image-hover-effect">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+       <!-- Filter Buttons -->
+       <div class="container my-4">
+        <div id="myBtnContainer" class="btn-group mb-4" role="group" aria-label="Filter Buttons">
+            <button class="btn" onclick="setActive(this); filterSelection('pickles')">Pickles</button>
+            <button class="btn" onclick="setActive(this); filterSelection('snacks')">Snacks</button>
+            <button class="btn" onclick="setActive(this); filterSelection('powders')">Chutney Powders</button>
+            <button class="btn" onclick="setActive(this); filterSelection('masalas')">Masalas</button>
+        </div>
+
+        <div class="container mt-4">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
+                <!-- Pickles -->
+                <div class="col filterDiv pickles">
+                    <div class="card">
+                        <img src="/public/imagesjp/mango_avakaya.jpg" class="card-img-top" alt="Mango Avakaya Pickle">
+                        <div class="card-body">
+                            <h5 class="card-title">Mango Avakaya Pickle</h5>
+                            <p class="card-text">Rs. 10.00</p>
+                            <button class="btn btn-primary"
+                                onclick="openPopover('Mango Avakaya Pickle', '/public/imagesjp/mango_avakaya.jpg', 10)">Select
+                                Options</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lemon Pickle -->
+                <div class="col filterDiv pickles">
+                    <div class="card">
+                        <img src="/public/imagesjp/lemon_pickle.jpg" class="card-img-top" alt="Lemon Pickle">
+                        <div class="card-body">
+                            <h5 class="card-title">Lemon Pickle</h5>
+                            <p class="card-text">Rs. 12.00</p>
+                            <button class="btn btn-primary"
+                                onclick="openPopover('Lemon Pickle', '/public/imagesjp/lemon_pickle.jpg', 12)">Select
+                                Options</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ginger Pickle -->
+                <div class="col filterDiv pickles">
+                    <div class="card">
+                        <img src="/public/imagesjp/ginger_pickle.jpg" class="card-img-top" alt="Ginger Pickle">
+                        <div class="card-body">
+                            <h5 class="card-title">Ginger Pickle</h5>
+                            <p class="card-text">Rs. 15.00</p>
+                            <button class="btn btn-primary"
+                                onclick="openPopover('Ginger Pickle', '/public/imagesjp/ginger_pickle.jpg', 15)">Select
+                                Options</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tomato Pickle -->
+                <div class="col filterDiv pickles">
+                    <div class="card">
+                        <img src="/public/imagesjp/tomato_pickle.jpg" class="card-img-top" alt="Tomato Pickle">
+                        <div class="card-body">
+                            <h5 class="card-title">Tomato Pickle</h5>
+                            <p class="card-text">Rs. 14.00</p>
+                            <button class="btn btn-primary"
+                                onclick="openPopover('Tomato Pickle', '/public/imagesjp/tomato_pickle.jpg', 14)">Select
+                                Options</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Garlic Pickle -->
+                <div class="col filterDiv pickles">
+                    <div class="card">
+                        <img src="/public/imagesjp/garlic_pickle.jpg" class="card-img-top" alt="Garlic Pickle">
+                        <div class="card-body">
+                            <h5 class="card-title">Garlic Pickle</h5>
+                            <p class="card-text">Rs. 18.00</p>
+                            <button class="btn btn-primary"
+                                onclick="openPopover('Garlic Pickle', '/public/imagesjp/garlic_pickle.jpg', 18)">Select
+                                Options</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gongura Pickle -->
+                <div class="col filterDiv pickles">
+                    <div class="card">
+                        <img src="/public/imagesjp/gongura_pickle.jpg" class="card-img-top" alt="Gongura Pickle">
+                        <div class="card-body">
+                            <h5 class="card-title">Gongura Pickle</h5>
+                            <p class="card-text">Rs. 20.00</p>
+                            <button class="btn btn-primary"
+                                onclick="openPopover('Gongura Pickle', '/public/imagesjp/gongura_pickle.jpg', 20)">Select
+                                Options</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Amla Pickle -->
+                <div class="col filterDiv pickles">
+                    <div class="card">
+                        <img src="/public/imagesjp/amla_pickle.jpg" class="card-img-top" alt="Amla Pickle">
+                        <div class="card-body">
+                            <h5 class="card-title">Amla Pickle</h5>
+                            <p class="card-text">Rs. 22.00</p>
+                            <button class="btn btn-primary"
+                                onclick="openPopover('Amla Pickle', '/public/imagesjp/amla_pickle.jpg', 22)">Select
+                                Options</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mixed Pickle -->
+                <div class="col filterDiv pickles">
+                    <div class="card">
+                        <img src="/public/imagesjp/mixed_pickle.jpg" class="card-img-top" alt="Mixed Pickle">
+                        <div class="card-body">
+                            <h5 class="card-title">Mixed Pickle</h5>
+                            <p class="card-text">Rs. 25.00</p>
+                            <button class="btn btn-primary"
+                                onclick="openPopover('Mixed Pickle', '/public/imagesjp/mixed_pickle.jpg', 25)">Select
+                                Options</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Snacks -->
+                <div class="col filterDiv snacks">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="Murukku">
+                        <div class="card-body">
+                            <h5 class="card-title">Murukku</h5>
+                            <p class="card-text">Rs. 50.00</p>
+                            <button class="btn btn-primary"
+                                onclick="openPopover('Murukku', 'https://via.placeholder.com/150', 50)">Select
+                                Options</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col filterDiv snacks">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="Banana Chips">
+                        <div class="card-body">
+                            <h5 class="card-title">Banana Chips</h5>
+                            <p class="card-text">Rs. 40.00</p>
+                            <button class="btn btn-primary"
+                                onclick="openPopover('Banana Chips', 'https://via.placeholder.com/150', 40)">Select
+                                Options</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chutney Powders -->
+                <div class="col filterDiv powders">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="Groundnut Powder">
+                        <div class="card-body">
+                            <h5 class="card-title">Groundnut Powder</h5>
+                            <p class="card-text">Rs. 30.00</p>
+                            <button class="btn btn-primary"
+                                onclick="openPopover('Groundnut Powder', 'https://via.placeholder.com/150', 30)">Select
+                                Options</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col filterDiv powders">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="Curry Leaf Powder">
+                        <div class="card-body">
+                            <h5 class="card-title">Curry Leaf Powder</h5>
+                            <p class="card-text">Rs. 35.00</p>
+                            <button class="btn btn-primary"
+                                onclick="openPopover('Curry Leaf Powder', 'https://via.placeholder.com/150', 35)">Select
+                                Options</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col filterDiv snacks">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="Banana Chips">
+                        <div class="card-body">
+                            <h5 class="card-title">Banana Chips</h5>
+                            <p class="card-text">Rs. 40.00</p>
+                            <button class="btn btn-primary"
+                                onclick="openPopover('Banana Chips', 'https://via.placeholder.com/150', 40)">Select
+                                Options</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Masalas -->
+                <div class="col filterDiv masalas">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="Garam Masala">
+                        <div class="card-body">
+                            <h5 class="card-title">Garam Masala</h5>
+                            <p class="card-text">Rs. 60.00</p>
+                            <button class="btn btn-primary"
+                                onclick="openPopover('Garam Masala', 'https://via.placeholder.com/150', 60)">Select
+                                Options</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col filterDiv masalas">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="Sambar Masala">
+                        <div class="card-body">
+                            <h5 class="card-title">Sambar Masala</h5>
+                            <p class="card-text">Rs. 70.00</p>
+                            <button class="btn btn-primary"
+                                onclick="openPopover('Sambar Masala', 'https://via.placeholder.com/150', 70)">Select
+                                Options</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Popover -->
+    <!-- Popup Modal -->
+    <div id="itemModal" class="modal fade" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img id="modalImage" src="" alt="" class="img-fluid">
+                    <p id="modalPrice"></p>
+                    <input type="number" id="modalQuantity" value="1" min="1">
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" onclick="addToCart()">Add to Cart</button>
+                    <button class="btn btn-secondary" onclick="addToWishlist()">Add to Wishlist</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Sidebar -->
+    <div id="cartSidebar" class="sidebar">
+        <h3>Cart</h3>
+        <button class="btn btn-danger btn-sm float-end" onclick="closeSidebar()">X</button>
+        <table id="cartTable" class="table">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Cart items will be populated here -->
+            </tbody>
+        </table>
+        <h4 id="cartTotal">Total: Rs. 0</h4>
+        <button class="btn btn-success" onclick="proceedToCheckout()">Proceed to Checkout</button>
+    </div>
+
+    <!-- Wishlist Sidebar -->
+    <div id="wishlistSidebar" class="sidebar">
+        <h3>Wishlist</h3>
+        <button class="btn btn-danger btn-sm float-end" onclick="closeSidebar()">X</button>
+        <table id="wishlistTable" class="table">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Wishlist items will be populated here -->
+            </tbody>
+        </table>
+    </div>
+
+
+    <!-- Category Section  start-->
+    <div class="container text-center py-5" id="category">
+        <h1 class="category-title">Choose Your Category</h1>
+        <p class="category-subtitle">Your ultimate destination for authentic Indian cuisine<br>
+            Explore our fresh pickles, flavourable masalas, and irresistible Telugu foods</p>
+        <div class="row mt-4">
+            <div class="col-6 col-sm-4 col-md-2 mb-4 category-item">
+                <a href="/public/pickels.html">
+                    <img src="/Public/imagesjp/images.jpg" alt="Pickles">
+                    <div>Pickles</div>
+                </a>
+            </div>
+            <div class="col-6 col-sm-4 col-md-2 mb-4 category-item">
+                <a href="#snacks">
+                    <img src="/Public/imagesjp/slide-pickle.jpg" alt="Snacks">
+                    <div>Snacks</div>
+                </a>
+            </div>
+            <div class="col-6 col-sm-4 col-md-2 mb-4 category-item">
+                <a href="#masalas">
+                    <img src="/Public/imagesjp/slide-pickle.jpg" alt="Masalas">
+                    <div>Masalas</div>
+                </a>
+            </div>
+            <div class="col-6 col-sm-4 col-md-2 mb-4 category-item">
+                <a href="#chutney-powder">
+                    <img src="/Public/imagesjp/slide-pickle.jpg" alt="Chutney Powder">
+                    <div>Chutney Powder</div>
+                </a>
+            </div>
+            <div class="col-6 col-sm-4 col-md-2 mb-4 category-item">
+                <a href="#culinary-pastes">
+                    <img src="/Public//imagesjp/slide-pickle.jpg" alt="Culinary Pastes">
+                    <div>Culinary Pastes</div>
+                </a>
+            </div>
+            <div class="col-6 col-sm-4 col-md-2 mb-4 category-item">
+                <a href="#spice-powders">
+                    <img src="/Public/imagesjp/slide-pickle.jpg" alt="Spice Powders">
+                    <div>Spice Powders</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Category Section end-->
+
+        <!--why choose us start-->
+        <div class="custom-container my-5">
+            <h2 class="text-danger fw-bold">Why Choose japali Home Foods</h2>
+            <div class="custom-features">
+                <div class="custom-feature-item text-end">
+                    <div>
+                        <i class="custom-feature-icon bi bi-hand-thumbs-up"></i>
+                        <p class="custom-feature-text">Rigorously tested Ingredients</p>
+                    </div>
+                    <div>
+                        <i class="custom-feature-icon bi bi-building"></i>
+                        <p class="custom-feature-text">US Food Authorities Approved Manufacturing Plant</p>
+                    </div>
+                </div>
+                <div class="custom-center-image">
+                    <img src="/Public/imagesjp/why.jpg" alt="Swetha Telugu Foods" class="custom-product-image">
+                </div>
+                <div class="custom-feature-item text-start">
+                    <div>
+                        <i class="custom-feature-icon bi bi-globe"></i>
+                        <p class="custom-feature-text">Trusted in 27+ Countries</p>
+                    </div>
+                    <div>
+                        <i class="custom-feature-icon bi bi-flask"></i>
+                        <p class="custom-feature-text">No added Preservatives</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--why choose us end-->
+    
+        <!--test-->
+        <div class="container mt-5">
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="testimonial">
+                            <img src="/Public/imagesjp/men.jpg" alt="User 1">
+                            <p class="lead">"This is an amazing service! Highly recommended."</p>
+                            <h5>- John Doe</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial">
+                            <img src="/Public/imagesjp/men2.jpg" alt="User 2">
+                            <p class="lead">"I love the user experience, it's seamless and fast."</p>
+                            <h5>- Jane Smith</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial">
+                            <img src="/Public/imagesjp/men3.jpg" alt="User 3">
+                            <p class="lead">"Great customer support and awesome features!"</p>
+                            <h5>- Alice Brown</h5>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+    
+    
+    
+        <!-- Footer Section -->
+    
+        <footer style="border: px solid rgb(240, 122, 122)" ;>
+            <div class="container">
+                <div class="row">
+                    <!-- Logo -->
+                    <div class="col-md-3 logo">
+                        <img src="/Public/imagesjp/Japali Logo.png" alt="Logo">
+                    </div>
+    
+                    <!-- Quick Links -->
+                    <div class="col-md-3 quick-links">
+                        <h5>Quick Links</h5>
+                        <a href="Index.html">Home</a>
+                        <a href="Collection.html">Services</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="Collection.html">Collection</a>
+                    </div>
+    
+                    <!-- About Us -->
+                    <div class="col-md-3">
+                        <h5>About Us</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+                    </div>
+    
+                    <!-- Contact Us -->
+                    <div class="col-md-3">
+                        <h5>Contact Us</h5>
+                        <p>Email: contact@domain.com</p>
+                        <p>Phone: +123 456 7890</p>
+                    </div>
+                </div>
+    
+                <div class="row">
+                    <!-- Follow Us -->
+                    <div class="col-md-12 text-center">
+                        <h5>Follow Us</h5>
+                        <div class="social-icons">
+                            <i class="fa fa-facebook"></i>
+                            <i class="fa fa-twitter"></i>
+                            <i class="fa fa-instagram"></i>
+                            <i class="fa fa-linkedin"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    
+        <div style="background-color: #e22c18; justify-content: center;  justify-content:center ; text-align: center; color: aliceblue; "
+            class="text">
+            <strong> © All Rights Reserved 2025 Japali Home Foods</strong>
+    
+    
+        </div>
+     
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
